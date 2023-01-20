@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+            <form class="survey-form">
+                <h1 class="form-title">Заполните опросник о своем котике и получите скидку в нашем магазине</h1>
+                <div class="input-field-div">
+                    <input class="input-field" type="text" name="petName" id="petName" placeholder="Имя вашего питомца" required><span class="required-sign">*</span>
+                </div>
+                <div class="input-field-div">
+                <input class="input-field" type="text" name="yourName" placeholder="Ваше имя" required><span class="required-sign">*</span>
+                </div>
+                <div class="input-field-div">
+                <input class="input-field" type="email" name="email" placeholder="Ваш email" required><span class="required-sign">*</span>
+                </div>
+                <div class="input-field-div">
+                <input class="input-field" type="tel" name="phone" placeholder="Ваш телефон" required minlength="11" maxlength="20"><span class="required-sign">*</span>
+                </div>
+                <div class="answer-block">
+                    <p>Порода:</p>
+                <select class="breed">
+                    <option value="long-haired">Длинношерстная</option>
+                    <option value="short-haired">Короткошерстная</option>
+                    <option value="sphynx">Сфинкс</option>
+                </select>
+            </div>
+            <div class="two-columns">
+            <div class="answer-block column food-block">
+                <p>Чем питается ваш питомец?</p>
+                <div class="food-type-checkbox variant">
+                <input type="checkbox" name="food" value="dry-food">
+                <p>Сухой корм</p>
+            </div>
+            <div class="food-type-checkbox variant">
+            <input type="checkbox" name="food" value="wet-food">
+            <p>Влажный корм</p>
+        </div>
+        <div class="food-type-checkbox variant">
+        <input type="checkbox" name="food" value="natural-food">
+        <p>Натуральный корм</p>
+    </div>
+            </div>
+            <div class="answer-block column">
+                <p>Пол вашего питомца:</p>
+                <div class="sex variant">    
+                <input type="radio" name="sex" value="female">
+                <p>Самка</p>
+            </div>
+            <div class="sex variant">
+            <input type="radio" name="sex" value="male">
+            <p>Самец</p>
+        </div>
+            </div>
+        </div>
+            <div class="block">
+                <p>Сюда можно написать все, что вы посчитаете нужным сообщить нам о своем питомце</p>
+            <textarea rows="5" cols="60"></textarea>
+        </div>
+        <div class="block">
+            <p>Приложите фото вашего питомца<span class="required-sign">*</span></p>
+            <input class="file-button" type="file" required>
+        </div>
+        <input class="submit-button" type="submit" value="Отправить анкету" onclick="classCreate()">
+            </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
