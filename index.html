@@ -26,42 +26,42 @@
                 <div class="answer-block">
                     <p>Порода:</p>
                 <select class="breed">
-                    <option value="long-haired">Длинношерстная</option>
-                    <option value="short-haired">Короткошерстная</option>
-                    <option value="sphynx">Сфинкс</option>
+                    <option class="breed-option" value="long-haired">Длинношерстная</option>
+                    <option class="breed-option" value="short-haired">Короткошерстная</option>
+                    <option class="breed-option" value="sphynx">Сфинкс</option>
                 </select>
             </div>
             <div class="two-columns">
             <div class="answer-block column food-block">
                 <p>Чем питается ваш питомец?</p>
                 <div class="food-type-checkbox variant">
-                <input type="checkbox" name="food" value="dry-food">
-                <p>Сухой корм</p>
+                <input type="checkbox" name="food" value="dry-food" id="dry-food">
+                <label for="dry-food">Сухой корм</label>
             </div>
             <div class="food-type-checkbox variant">
-            <input type="checkbox" name="food" value="wet-food">
-            <p>Влажный корм</p>
+            <input type="checkbox" name="food" value="wet-food" id="wet-food">
+            <label for="wet-food">Влажный корм</label>
         </div>
         <div class="food-type-checkbox variant">
-        <input type="checkbox" name="food" value="natural-food">
-        <p>Натуральный корм</p>
+        <input type="checkbox" name="food" value="natural-food" id="natural-food">
+        <label for="natural-food">Натуральный корм</label>
     </div>
             </div>
             <div class="answer-block column">
                 <p>Пол вашего питомца:</p>
                 <div class="sex variant">    
-                <input type="radio" name="sex" value="female">
-                <p>Самка</p>
+                <input type="radio" class="sex-type" name="sex" value="female" id="female" checked>
+                <label for="female">Самка</label>
             </div>
             <div class="sex variant">
-            <input type="radio" name="sex" value="male">
-            <p>Самец</p>
+            <input type="radio" class="sex-type" name="sex" value="male" id="male">
+            <label for="male">Самец</label>
         </div>
             </div>
         </div>
             <div class="block">
                 <p>Сюда можно написать все, что вы посчитаете нужным сообщить нам о своем питомце</p>
-            <textarea rows="5" cols="60"></textarea>
+            <textarea class="comment-block" rows="5" cols="60"></textarea>
         </div>
         <div class="block">
             <p>Приложите фото вашего питомца<span class="required-sign">*</span></p>
